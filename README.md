@@ -22,6 +22,10 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
+## About the project and other technicalities
+
+This is a basic login/signup page built using Angular to showcase the working of how login and registration process is undertaken through LocalStorage since for this assignment i was not provided with any api.
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

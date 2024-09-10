@@ -1,0 +1,50 @@
+
+  
+  .box {
+    --r: 30px; /* control the rounded part*/
+    --s: 80px; /* control the size of the cut and the image  */
+    --a: 20deg; /* control the depth of the curvature */
+    
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    transition: .4s --a;
+    color: #fff;
+    font-family: system-ui,sans-serif;
+    text-align: center;
+    
+  }
+  
+  .box img {
+    height: calc(2*var(--s));
+    
+    border-radius: 50%;
+    background: #D95B43;
+    
+  }
+  
+  .box:before {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    inset: calc(var(--s)/2 + var(--r)/4) 0 0 0;
+    background: linear-gradient(45deg,#00A0B0,#88A65E);
+    
+    
+  }
+  
+  body {
+    margin: 0;  
+    background: repeating-linear-gradient(-45deg, #fff 0 20px, #ddd 0 40px);
+    padding-top: 100px;
+  }
+  
+  h2 {
+    margin-block: calc(var(--s)/-3) 0;
+    font-size: 3rem
+  }
+  p {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 1rem;
+  }
